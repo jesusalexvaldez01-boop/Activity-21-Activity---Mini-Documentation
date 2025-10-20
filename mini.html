@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Mini jQuery Documentation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <side class="sidebar">
+    <p><a class="links" href="https://api.jquery.com/click/#on-">.click()</a></p>
+    <p><a class="links" href="https://api.jquery.com/hide/#hide">.hide()</a></p>
+    <p><a class="links" href="https://api.jquery.com/show/#show">.show()</a> </p>
+    <p> <a class="links" href="https://api.jquery.com/toggle/#toggle-duration-complete">.toggle()</a></p>
+    <p><a class="links" href="https://api.jquery.com/slideDown/#slideDown-duration-complete">.slideDown()</a></p> 
+    <p><a class="links" href="https://api.jquery.com/slideUp/#slideUp-duration-easing-complete-complete">.slideup()</a></p>
+    <p> <a class="links" href="https://api.jquery.com/slideToggle/#slideToggle-duration-complete">.slideToggle()</a></p>
+    <p> <a class="links" href="https://api.jquery.com/fadeOut/#fadeOut-duration-complete">.fadeOut()</a></p>
+    <p><a class="links" href="https://api.jquery.com/fadeIn/#fadeIn-duration-complete">.fadeIn()</a></p>
+    <p><a class="links" href="https://api.jquery.com/addClass/#example-0">.addClass()</a></p>
+    <p><a class="links" href="https://api.jquery.com/before/#before-content-content">.before()</a></p>
+    <p> <a class="links" href="https://api.jquery.com/after/#after-content-content">.after()</a></p>
+    <p><a class="links" href="https://api.jquery.com/append/#append-content-content">.append()</a></p>
+    <p> <a class="links" href="https://api.jquery.com/html/#html">.html()</a></p>
+    <p><a class="links" href="https://api.jquery.com/attr/#attr-attributeName">.attr()</a></p>
+    <p><a class="links" href="https://api.jquery.com/val/#val">.val()</a></p>
+    <p><a class="links" href="https://api.jquery.com/text/#text">.text()</a></p>
+    </side>
+
+   
+    <main class="content">
+      <h1>My Mini Documentation</h1>
+     
+      <section id="click">
+        <h2>Click</h2>
+        <p>binds an event handler to the "click" JavaScript event, <br>
+        or trigger that event on an elements. Example: Clicking <br>
+        the button will display alert box.</p>
+        <button id="bottonClick">.click()</button>
+        <p id="clickResult"></p>
+        <hr>
+      </section>
+
+     
+      <section id="hide">
+        <h2>Hide()</h2>
+        <p>Hides the matched elements. Example: Hiding this <br>
+        paragraph.</p>
+        <button id="bottonHide">.hide()</button>
+        <p class="textHide">This paragraph will disappear when hidden.</p>
+        <hr>
+      </section>
+
+      <section id="show">
+        <h2>Show Text</h2>
+        <p>Displays the matched elements. Example: Showing the <br>
+        hidden paragraph here.</p>
+        <button id="bottonShow">.show()</button>
+        <p class="textShow" style="display:none;">Now you see me!</p>
+        <hr>
+      </section>
+
+      <section id="toggle">
+        <h2>Toggle</h2>
+        <p>The matched elements will be revealed or hidden immediately, with no animation, 
+          by changing the CSS display property. If the element is initially displayed, it 
+          will be hidden; if hidden, it will be shown.</p>
+        <button id="bottonToggle">.toggle()</button>
+        <div class="box toggleBox"> This Toggle</div>
+        <hr>
+      </section>
+
+      <section id="slideDown">
+        <h2>Slide Down</h2>
+        <p>The .slideDown() method animates the height of the matched elements. This causes lower
+           parts of the page to slide down, making way for the revealed items.</p>
+        <button id="bottonSlideDown">.slideDown()</button>
+        <div class="panel slideDownBox" style="display:none;">Hello jQuery!</div>
+        <hr>
+      </section>
+
+      <section id="slideUp">
+        <h2>Slide Up</h2>
+        <p>The .slideUp() method animates the height of the matched elements. This causes lower
+           parts of the page to slide up, appearing to conceal the items.</p>
+        <button id="bottonSlideUp">.slideUp()</button>
+        <div class="panel slideUpBox">Bye jQuery!</div>
+        <hr>
+      </section>
+
+
+      <section id="slideToggle">
+        <h2>Slide Toggle</h2>
+        <p>The .slideToggle() method animates the height of the matched elements. This causes 
+          lower parts of the page to slide up or down, appearing to reveal or conceal the items.
+           If the element is initially displayed, it will be hidden; if hidden, it will be shown.</p>
+        <button id="bottonSlideToggle">.slideToggle()</button>
+        <div class="panel slideToggleBox">Sliding content!</div>
+        <hr>
+      </section>
+
+      <section id="fadeIn">
+        <h2>Fade In</h2>
+        <p>The .fadeIn() method animates the opacity of the matched elements. It is similar to 
+          the .fadeTo() method but that method does not unhide the element and can specify the 
+          final opacity level.</p>
+        <button id="bottonFadeIn">.fadeIn()</button>
+        <div class="box fadeInBox" style="display:none;">This is a fade-in </div>
+        <hr>
+      </section>
+
+      <section id="fadeOut">
+        <h2>Fade Out</h2>
+        <p>The .fadeOut() method animates the opacity of the matched elements. Once the opacity
+           reaches 0, the display style property is set to none, so the element no longer affects
+            the layout of the page.</p>
+        <button id="bottonFadeOut">.fadeOut()</button>
+        <div class="box fadeOutBox">This is a fade-out</div>
+        <hr>
+      </section>
+
+      <section id="addClass">
+        <h2>Add Class</h2>
+        <p>It's important to note that this method does not replace a class. It simply adds 
+          the class, appending it to any which may already be assigned to the elements.</p>
+        <button id="bottonAddClass">.addClass()</button>
+        <p id="addClassText">Watch me change color!</p>
+        <hr>
+      </section>
+
+      <section id="before">
+        <h2>Before</h2>
+        <p>With .before(), the content to be inserted comes from the method's 
+          argument: $(target).before(contentToBeInserted).</p>
+        <button id="bottonBefore">.before()</button>
+        <p id="beforeText">Original text here.</p>
+        <hr>
+      </section>
+
+      <section id="after">
+        <h2>After</h2>
+        <p>With .after(), the content to be inserted comes from the method's
+           argument: $(target).after(contentToBeInserted).</p>
+        <button id="bottonAfter">.after()</button>
+        <p id="afterText">Original text here.</p>
+        <hr>
+      </section>
+
+      <section id="append">
+        <h2>Append</h2>
+        <p>The .append() method inserts the specified content as the last child of each 
+          element in the jQuery collection (To insert it as the first child, use .prepend()).</p>
+        <button id="bottonAppend">.append()</button>
+        <div id="appendBox">Here: </div>
+        <hr>
+      </section>
+
+      <section id="html">
+        <h2>HTML</h2>
+        <p>Get the HTML contents of the first element in the set of matched elements or
+           set the HTML contents of every matched element.</p>
+        <button id="bottonHtml">.html()</button>
+        <div id="htmlBox"><b>Original HTML content</b></div>
+        <hr>
+      </section>
+
+      <section id="attr">
+        <h2>Attr</h2>
+        <p>Get the value of an attribute for the first element in the set of matched 
+          elements or set one or more attributes for every matched element.
+          Contents:</p>
+        <img id="attrImg" src="https://via.placeholder.com/100" alt="placeholder">
+        <br><button id="bottonAttr">.attr()</button>
+        <hr>
+      </section>
+
+      <section id="val">
+        <h2>Val</h2>
+        <p>Get the current value of the first element in the set of matched elements or 
+          set the value of every matched element.</p>
+        <input type="text" id="inputVal" placeholder="Type something">
+        <button id="bottonVal">.val()</button>
+        <p id="valResult"></p>
+        <hr>
+      </section>
+
+      <section id="text">
+        <h2>Text</h2>
+        <p>Get the combined text contents of each element in the set of matched elements, 
+          including their descendants, or set the text contents of the matched elements.</p>
+        <button id="bottonText">.text()</button>
+        <p id="textBox">This is original text.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
