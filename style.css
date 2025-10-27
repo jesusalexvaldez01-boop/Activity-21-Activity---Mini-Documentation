@@ -56,17 +56,24 @@ h2 {
 button {
   padding: 8px 15px;
   border: none;
-  background-color: #0077cc;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 5px;
   cursor: pointer;
 }
 
 hr {
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 2px solid #0c0101;
 }
 
 
+button{
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  box-shadow: 2px 2px 0px black;
+}
 
 

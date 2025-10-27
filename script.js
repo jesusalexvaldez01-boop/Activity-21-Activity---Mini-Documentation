@@ -2,7 +2,7 @@ $(document).ready(function(){
 
  
   $('#bottonClick').click(function(){
-    $('#clickResult').text("Button was clicked!");
+    $('#clickResult').text("hello!");
   });
 
   
@@ -51,17 +51,17 @@ $(document).ready(function(){
 
 
   $('#bottonBefore').click(function(){
-    $('#beforeText').before("<p> Inserted before</p>");
+    $('#beforeText').before("I didn’t know how to use jQuery.");
   });
 
  
   $('#bottonAfter').click(function(){
-    $('#afterText').after("<p>Inserted after</p>");
+    $('#afterText').after("I will use jQuery to make interactive web pages.");
   });
 
  
   $('#bottonAppend').click(function(){
-    $('#appendBox').append(" + Added Text");
+    $('#appendBox').append(" text added");
   });
 
   
@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 
   $('#bottonText').click(function(){
-    $('#textBox').text("The text has been updated!");
+    $('#textBox').text(" text  updated");
   });
 
 });
