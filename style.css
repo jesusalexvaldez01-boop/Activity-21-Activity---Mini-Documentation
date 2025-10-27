@@ -54,7 +54,7 @@ h2 {
 }
 
 button {
-  padding: 8px 15px;
+  padding: 0px 10px;
   border: none;
   background-color: white;
   color: black;
@@ -71,8 +71,8 @@ hr {
 button{
   border-bottom: 3px solid black;
   border-right: 3px solid black;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
   box-shadow: 2px 2px 0px black;
 }
 
